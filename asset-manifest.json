@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/tandp/static/css/main.976beb7b.css",
+    "main.js": "/tandp/static/js/main.28be5c80.js",
+    "static/js/787.c834f9f2.chunk.js": "/tandp/static/js/787.c834f9f2.chunk.js",
+    "static/media/logoo.png": "/tandp/static/media/logoo.708375c6c91fb397d76d.png",
+    "static/media/p1.jpg": "/tandp/static/media/p1.a46dfc60d1355e95e01b.jpg",
+    "static/media/p2.jpg": "/tandp/static/media/p2.33a30f043254dc0ee122.jpg",
+    "static/media/p6.jpg": "/tandp/static/media/p6.5018908e7a8edfaff683.jpg",
+    "static/media/p3.jpg": "/tandp/static/media/p3.c6f1665fe10552735a71.jpg",
+    "static/media/award2.jpg": "/tandp/static/media/award2.6ec0e8d551cedf5ea58d.jpg",
+    "static/media/award5.jpg": "/tandp/static/media/award5.a9e58909ebcc5e89f67f.jpg",
+    "static/media/barclays.png": "/tandp/static/media/barclays.7f316646f573a8a6dacf.png",
+    "static/media/award1.jpg": "/tandp/static/media/award1.ddee21f6961a59b611bf.jpg",
+    "static/media/award3.jpg": "/tandp/static/media/award3.053c8b528350d1a43774.jpg",
+    "static/media/Santosh.jpg": "/tandp/static/media/Santosh.b380c41b727230f8fa34.jpg",
+    "static/media/Khot.jpg": "/tandp/static/media/Khot.ea7e3475b0f542a0bd8c.jpg",
+    "static/media/Dhanashree.jpg": "/tandp/static/media/Dhanashree.ad56a558763bb61fbf48.jpg",
+    "static/media/Sudarshan-Sutar.jpg": "/tandp/static/media/Sudarshan-Sutar.38b018fb244953ecb78e.jpg",
+    "static/media/award4.jpg": "/tandp/static/media/award4.da5f3aee2dabc2ee4ac7.jpg",
+    "static/media/award6.jpg": "/tandp/static/media/award6.8a5428bbe7fe0dc77123.jpg",
+    "static/media/tata.jpg": "/tandp/static/media/tata.f0775285b7fa19adb1e4.jpg",
+    "static/media/ZYCUS.jpg": "/tandp/static/media/ZYCUS.fbb65d3d32b7cf800158.jpg",
+    "static/media/logodyp.png": "/tandp/static/media/logodyp.a182486dcb39daa7137d.png",
+    "static/media/M Kaingade.jpg": "/tandp/static/media/M Kaingade.e3b756d3c697219c04d9.jpg",
+    "static/media/Amruta.jpeg": "/tandp/static/media/Amruta.90b1e1e91eeea59bfc5c.jpeg",
+    "static/media/Microsoft.jpg": "/tandp/static/media/Microsoft.406604c3dbe7b9f1395f.jpg",
+    "index.html": "/tandp/index.html",
+    "main.976beb7b.css.map": "/tandp/static/css/main.976beb7b.css.map",
+    "main.28be5c80.js.map": "/tandp/static/js/main.28be5c80.js.map",
+    "787.c834f9f2.chunk.js.map": "/tandp/static/js/787.c834f9f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.976beb7b.css",
+    "static/js/main.28be5c80.js"
+  ]
+}
