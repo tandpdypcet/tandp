@@ -27,7 +27,6 @@ import dropDown from './Components/Admin/dropdown';
 
 function App() {
   return (
-    <BrowserRouter basename={'/tandp'}>
       <div className="App">
         <Navbar_b/>
         <Routes>
@@ -56,7 +55,6 @@ function App() {
           <Route path='/dd' element={<dropDown />}/>
         </Routes>
       </div>
-    </BrowserRouter>
   );
 }
 
