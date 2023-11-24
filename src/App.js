@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes,Route } from 'react-router-dom';
+import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import LeftTabsExample from './Components/About/About';
 import  Login  from './Components/Login/Login';
 import { Contact } from './Components/Contact/Contact';
@@ -27,34 +27,36 @@ import dropDown from './Components/Admin/dropdown';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar_b/>
-      <Routes>
-        <Route path="/about" element={<LeftTabsExample/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/register" element={<Registration />} />
-        <Route path='/coordinator' element={<Coordinator />} />
-        <Route path='/gallery' element={<Gallery/>}/>
-        <Route path="/" element={<Home />} />
-        <Route path='/nav' element={<Navbar_b />} />
-        <Route path='/adminVerify' element={<AdminVerification />} />
-        <Route path='/StudentDetails' element={<StudentDetails />} />
-        <Route path='/readStudent/:id' element={<ReadStudent />} />
-        <Route path='/addStudents' element={<AddStudents />} />
-        <Route path='/adminPage' element={<AdminPage />} />
-        <Route path='/recruiters' element={<Recruiters />} />
-        <Route path='/drop' element={<DropDown />} />
-        <Route path='/addAnnouncememnt' element={<AddAnnouncement />} />
-        <Route path='/announce' element={<AnnouncementSlider />} />
-        <Route path='/studplacement23' element={<StudentPlaced23 />} />
-        <Route path='/studplacement22' element={<StudentPlaced22 />} />
-        <Route path='/studplacement21' element={<StudentPlaced21 />} />
-        <Route path='/addGallery' element={<AddGallery />} />
-        <Route path='/award' element={<Award />} />
-        <Route path='/dd' element={<dropDown />}/>
-      </Routes>
-    </div>
+    <BrowserRouter basename={'/tandp'}>
+      <div className="App">
+        <Navbar_b/>
+        <Routes>
+          <Route path="/about" element={<LeftTabsExample/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/register" element={<Registration />} />
+          <Route path='/coordinator' element={<Coordinator />} />
+          <Route path='/gallery' element={<Gallery/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path='/nav' element={<Navbar_b />} />
+          <Route path='/adminVerify' element={<AdminVerification />} />
+          <Route path='/StudentDetails' element={<StudentDetails />} />
+          <Route path='/readStudent/:id' element={<ReadStudent />} />
+          <Route path='/addStudents' element={<AddStudents />} />
+          <Route path='/adminPage' element={<AdminPage />} />
+          <Route path='/recruiters' element={<Recruiters />} />
+          <Route path='/drop' element={<DropDown />} />
+          <Route path='/addAnnouncememnt' element={<AddAnnouncement />} />
+          <Route path='/announce' element={<AnnouncementSlider />} />
+          <Route path='/studplacement23' element={<StudentPlaced23 />} />
+          <Route path='/studplacement22' element={<StudentPlaced22 />} />
+          <Route path='/studplacement21' element={<StudentPlaced21 />} />
+          <Route path='/addGallery' element={<AddGallery />} />
+          <Route path='/award' element={<Award />} />
+          <Route path='/dd' element={<dropDown />}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
