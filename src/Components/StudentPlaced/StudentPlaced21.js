@@ -25,7 +25,7 @@ function StudentPlaced21() {
                                 <h3>{addstudplaced.name}</h3>
                                 <p>
                                     Company: {addstudplaced.company}<br />
-                                    Student Details: {addstudplaced.studDetails}
+                                    Student Details: {addstudplaced.details}
                                 </p>
                                 
                             </div>
