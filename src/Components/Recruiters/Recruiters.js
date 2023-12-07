@@ -18,37 +18,7 @@ const Recruiters = () => {
             
             <h1 className="heading">Our Recruiters</h1>
             <div className="box-container recruiters">
-                <div className="box rBox">
-                    <img src={RecImages}></img>
-                </div>
-                <div className="box rBox">
-                    <img src={zopper}></img>
-                </div>
-                <div className="box rBox">
-                    <img src={tata}></img>
-
-                </div>
-                <div className="box rBox">
-                    <img src={ubi}></img>
-
-                </div>
-                <div className="box rBox">
-                    <img src={te}></img>
-
-                </div>
-                <div className="box rBox">
-                    <img src={skl}></img>
-
-                </div>
-                <div className="box rBox">
-                    <img src={ms}></img>
-                </div>
-
-                <div className="box rBox">
-                    <img src={bc}></img>
-                </div>
-
-                <div className="box rBox">
+            <div className="box rBox">
                     <a href='https://www.zycus.com/'>
                         <img src={RecImages}></img>
                     </a>
@@ -69,6 +39,23 @@ const Recruiters = () => {
                         <img src={ubi}></img>
                     </a>
                 </div>
+                <div className="box rBox">
+                    <img src={te}></img>
+
+                </div>
+                <div className="box rBox">
+                    <img src={skl}></img>
+
+                </div>
+                <div className="box rBox">
+                    <img src={ms}></img>
+                </div>
+
+                <div className="box rBox">
+                    <img src={bc}></img>
+                </div>
+
+                
                 
                 
                 
