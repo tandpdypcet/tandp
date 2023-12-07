@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tandp/static/css/main.976beb7b.css",
-    "main.js": "/tandp/static/js/main.968837db.js",
+    "main.css": "/tandp/static/css/main.bf873d5b.css",
+    "main.js": "/tandp/static/js/main.cf6ec83d.js",
     "static/js/787.c834f9f2.chunk.js": "/tandp/static/js/787.c834f9f2.chunk.js",
     "static/media/logoo.png": "/tandp/static/media/logoo.708375c6c91fb397d76d.png",
     "static/media/p1.jpg": "/tandp/static/media/p1.a46dfc60d1355e95e01b.jpg",
@@ -26,12 +26,12 @@
     "static/media/Amruta.jpeg": "/tandp/static/media/Amruta.90b1e1e91eeea59bfc5c.jpeg",
     "static/media/Microsoft.jpg": "/tandp/static/media/Microsoft.406604c3dbe7b9f1395f.jpg",
     "index.html": "/tandp/index.html",
-    "main.976beb7b.css.map": "/tandp/static/css/main.976beb7b.css.map",
-    "main.968837db.js.map": "/tandp/static/js/main.968837db.js.map",
+    "main.bf873d5b.css.map": "/tandp/static/css/main.bf873d5b.css.map",
+    "main.cf6ec83d.js.map": "/tandp/static/js/main.cf6ec83d.js.map",
     "787.c834f9f2.chunk.js.map": "/tandp/static/js/787.c834f9f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.976beb7b.css",
-    "static/js/main.968837db.js"
+    "static/css/main.bf873d5b.css",
+    "static/js/main.cf6ec83d.js"
   ]
 }
