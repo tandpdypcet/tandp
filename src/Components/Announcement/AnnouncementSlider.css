@@ -21,6 +21,11 @@
   min-width: 200px;
   flex-grow: 1;
 }
+.announceArea{
+  align-self: center;
+  width: 85%;
+  overflow: hidden;
+}
 .announcement-slide{
   transform: translateX(100%);
   animation: moving 25s linear infinite;

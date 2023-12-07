@@ -12,9 +12,12 @@ import ai2 from "../Images/Nitish.jpg"
 import ds1 from "../Images/ds1.jpg"
 import fe1 from "../Images/fe1.jpg"
 import "./Coordinator.css"
+import { Navbar_b } from "../Navbar/Navbar_b";
 export default function Coordinator() {
     return (
+
         <div>
+            <Navbar_b/>
             <section id='coordinator' className='coordinator'>
 
 

@@ -21,13 +21,14 @@ function AnnouncementSlider()
   return (
     <div className="announcement-slider-container">
 
+      <div className='announceArea'>
       {data.map((announcement, index) => {
         return <div key={index}>
           <div className='announcement-slide'>{ announcement}</div>
 
         </div>
       })}
-     
+     </div>
 
     </div>
   );

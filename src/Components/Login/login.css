@@ -8,7 +8,8 @@
 
 
 .MainContainerLogin{
-    height: 90vh;
+    height: 100vh;
+    padding-top: 5%;
     width: 100vw;
     background-color: antiquewhite;
     background-image: url('https://doak.dypgroup.edu.in/wp-content/uploads/2020/06/168.jpg');
@@ -18,7 +19,7 @@
 
 .ContainerBoxLogin{
     background-color: rgba(0, 0, 0, 0.454);
-    height: 420px;
+    height: 520px;
     width: 90%;
     padding: 20px;
     margin-left: 60px;
@@ -47,16 +48,22 @@
 .LoginBox
 {
     background-color: rgba(0, 0, 0, 0.502); 
-    height: 270px;
+    height: 330px;
     width: 400px;
     border-radius: 5px;
     margin-left: 750px;  
     color: white;
     
 }
+.EntryBox{
+    height: 240px;
+}
+.regBox{
+    height: 450px;
+}
 .AdminBox{
     background-color: rgba(0, 0, 0, 0.502); 
-    height: 190px;
+    height: 250px;
     width: 400px;
     margin-top: 50px;
     border-radius: 5px;

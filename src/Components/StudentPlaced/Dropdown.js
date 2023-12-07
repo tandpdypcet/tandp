@@ -1,10 +1,13 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import './dropdown.css';
 import { Link } from 'react-router-dom';
-
+import { Navbar_b } from '../Navbar/Navbar_b';
 function DropDown() {
     return (
+        <>
+            <Navbar_b/>
         <div className="container">
+            
             <h1 className="heading">Placement Record</h1>
             <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic" className='dropdown-basic'>
@@ -14,8 +17,8 @@ function DropDown() {
                     <div>
                         <Dropdown.Item as={Link} to={"/studplacement23"} className='drop-item' href="#">2023-24</Dropdown.Item>
                     </div>
-                    <Dropdown.Item as={Link} to={"/studplacement22"} className='drop-item' href="#">2022-23</Dropdown.Item>
-                    <Dropdown.Item as={Link} to={"/studplacement21"} className='drop-item' href="#">2021-22</Dropdown.Item>
+                    {/* <Dropdown.Item as={Link} to={"/studplacement22"} className='drop-item' href="#">2022-23</Dropdown.Item>
+                    <Dropdown.Item as={Link} to={"/studplacement21"} className='drop-item' href="#">2021-22</Dropdown.Item> */}
                 </Dropdown.Menu>
             </Dropdown>
             {/* <div className='btn-grp'>
@@ -34,7 +37,7 @@ function DropDown() {
                 <Dropdown.Menu>
                     <div>
                         <Dropdown.Item className='drop-item' >
-                            <a href='https://acrobat.adobe.com/id/urn:aaid:sc:AP:00741428-a5c6-4c9b-beee-c6a55465c4b2'>Placement Record of Batch 2021-22</a>
+                            <a href='https://acrobat.adobe.com/id/urn:aaid:sc:AP:00741428-a5c6-4c9b-beee-c6a55465c4b2' >Placement Record of Batch 2021-22</a>
                         </Dropdown.Item>
                     </div>
                     <Dropdown.Item className='drop-item'>
@@ -50,10 +53,8 @@ function DropDown() {
 
                 </Dropdown.Menu>
             </Dropdown>
-            
-
-
         </div>
-    );
+        </>
+            );
 }
 export default DropDown;

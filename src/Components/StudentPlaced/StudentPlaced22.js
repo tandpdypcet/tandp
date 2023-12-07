@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { Navbar_b } from "../Navbar/Navbar_b";
 function StudentPlaced22() {
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -17,6 +18,7 @@ function StudentPlaced22() {
     return (
         <>
 
+            <Navbar_b/>
             <div className="container">
                 <h1 className="heading">Placement Record</h1>
                 <div className="box-container">

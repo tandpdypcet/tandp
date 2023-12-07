@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './gallery.css'
+import { Navbar_b } from "../Navbar/Navbar_b";
 export const Gallery = () => {
 
 
@@ -22,8 +23,9 @@ export const Gallery = () => {
     }
     return (
         <>
+            <Navbar_b/>
             <h1 style={{ textAlign: 'center' }}>Image Gallery</h1>
-            <h2 style={{ textAlign: 'center' }}>DYPCET</h2>
+            {/* <h2 style={{ textAlign: 'center' }}>DYPCET</h2> */}
 
              <div className={model ? "model open" : "model"}>
                 <img src={tempimgSrc} />

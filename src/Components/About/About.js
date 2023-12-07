@@ -4,9 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Container from 'react-bootstrap/Container';
 import './About.css';
+import { Navbar_b } from '../Navbar/Navbar_b';
 
 function LeftTabsExample() {
     return (
+        <>
+            <Navbar_b/>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first" className="">
             <Row>
                 <Col sm={2}>
@@ -90,7 +93,8 @@ function LeftTabsExample() {
                     </Tab.Content>
                 </Col>
             </Row>
-        </Tab.Container>
+            </Tab.Container>
+            </>
     );
 }
 

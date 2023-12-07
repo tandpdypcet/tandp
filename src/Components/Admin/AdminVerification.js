@@ -3,7 +3,8 @@ import logo from "../Images/logoo.png";
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
+
 function AdminVerification() {
     const [values, setValues] = useState({
         code: ''
@@ -46,6 +47,7 @@ function AdminVerification() {
                                 />
                             </div>
                             <button className="login-btn" onClick={handleSubmit}>Verify</button>
+                            <Link to="/"><button className="login-btn" >Back</button></Link>
                         </form>
                     </div>
                 </div>

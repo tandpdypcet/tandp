@@ -1,6 +1,4 @@
 import './StudentDetails.css';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -9,11 +7,12 @@ import StudentDetails from './StudentDetails';
 import AddAnnouncement from './AddAnnouncement';
 import AddGallery from './AddGallery';
 import AddStudents from './AddStudents';
+import { Link } from 'react-router-dom';
 function AdminPage() {
 
     return (
         <>
-            <Tab.Container id="left-tabs-example" defaultActiveKey="first" className="">
+            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
                     <Col sm={2}>
                         <Nav variant="pills" className="flex-column mt-4 ml-4">
@@ -28,6 +27,9 @@ function AdminPage() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="four">Add Gallery</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link><Link to={"/"}>Logout</Link></Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Col>
@@ -45,10 +47,13 @@ function AdminPage() {
                             <Tab.Pane eventKey="four">
                                 <AddGallery/>
                             </Tab.Pane>
+                            
                         </Tab.Content>
                     </Col>
-                </Row>
-            </Tab.Container>
+                    </Row>
+                    
+                </Tab.Container>
+               
 
 
         </>

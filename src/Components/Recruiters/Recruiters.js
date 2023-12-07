@@ -1,6 +1,7 @@
 import React from 'react';
 import './Recruiters.css'
 import RecImages from '../Images/Recruiters/ZYCUS.jpg';
+import { Navbar_b } from '../Navbar/Navbar_b';
 import zopper from '../Images/Recruiters/Zopper.png';
 import tata from '../Images/Recruiters/tata.jpg';
 import ubi from '../Images/Recruiters/ubi.png';
@@ -11,7 +12,10 @@ import bc from '../Images/Recruiters/barclays.png';
 import hex from '../Images/Recruiters/Hexaware.png';
 const Recruiters = () => {
     return (
+        <>
+            <Navbar_b/>
         <div className="container rcontainer">
+            
             <h1 className="heading">Our Recruiters</h1>
             <div className="box-container recruiters">
                 <div className="box rBox">
@@ -48,7 +52,8 @@ const Recruiters = () => {
                 
                 
             </div>
-        </div>
+            </div>
+            </>
     );
 };
 

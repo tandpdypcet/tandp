@@ -24,7 +24,7 @@ export const Navbar_b = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <div className='list'><Nav.Link as={Link} to={"/"}>Home</Nav.Link></div>
+                        <div className='list'><Nav.Link as={Link} to={"/home"}>Home</Nav.Link></div>
                         
                         <Nav.Link as={Link} to={"/about"}>About us</Nav.Link>
                      
@@ -33,8 +33,7 @@ export const Navbar_b = () => {
                         <Nav.Link as={Link} to={"/recruiters"}>Recruiters</Nav.Link>
                         <Nav.Link as={Link} to={"/award"}>Awards</Nav.Link>
                         <Nav.Link as={Link} to={"/drop"}>Placement</Nav.Link>
-                        <Nav.Link as={Link} to={"/register"}>Registration</Nav.Link>
-                        <Nav.Link as={Link} to={"/adminVerify"}>Admin</Nav.Link>
+                        <Nav.Link as={Link} to={"/"}>Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

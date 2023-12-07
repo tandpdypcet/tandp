@@ -1,6 +1,6 @@
 import './login.css';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link ,useNavigate} from 'react-router-dom'
 import axios from 'axios';
 import logo from "../Images/logoo.png";
 import Validation from './Validation';
@@ -13,6 +13,8 @@ export default function Registration() {
         Cpassword:''
     })
 
+    const navigate = useNavigate();
+
     const [errors, setErrors] = useState({
         Username: '',
         Email: '',
@@ -21,16 +23,22 @@ export default function Registration() {
     })
     const handleSubmit = (event) => {
         event.preventDefault();
-        setErrors(Validation(values));
-        axios.post(process.env.REACT_APP_BASE_URL+'/register', {username: values.Username[0], email: values.Email[0], password: values.Password[0]})
-            .then(res => {
-                // console.log("Registered Successful!", res);
-                alert("Done");
-            })
-            .catch(err => {
-                // console.log("Registration failed", err);
-                alert("Fail");
-            });
+        const validationErrors = Validation(values);
+        setErrors(validationErrors);
+
+        if (Object.values(validationErrors).every((val) => val === '')) {
+         
+            axios.post(process.env.REACT_APP_BASE_URL + '/register', { username: values.Username[0], email: values.Email[0], password: values.Password[0] })
+                .then(res => {
+                    // console.log("Registered Successful!", res);
+                    alert("Registration Successfull!");
+                    navigate("/home")
+                })
+                .catch(err => {
+                    // console.log("Registration failed", err);
+                    alert("Fail");
+                });
+        }
     }
 
     const onHandleChange = (event) => {
@@ -42,7 +50,7 @@ export default function Registration() {
             <div className='MainContainerLogin'>
                 <div className='ContainerBoxLogin'>
                     <img src={logo} alt='logo' />
-                    <div className='LoginContainer'>
+                    <div className='LoginContainer regBox'>
                         <form>
                             <form>
 
@@ -67,12 +75,13 @@ export default function Registration() {
 
                                 <div className="input">
                                     <input type="password" placeholder='Confirm Password' name="Cpassword" id="Cpassword" required title="Please enter your Password again here" />
-                                    {errors.Cpassword && <span className='text-danger'> {errors.Cpassword}</span>}
+                                    {/* {errors.Cpassword && <span className='text-danger'> {errors.Cpassword}</span>} */}
                                 </div>
 
                                 <input type="submit" value="SignUp" className="login-btn" onClick={handleSubmit} />
                                 <p>Already have an account? <Link to="/login">Login</Link></p>
 
+                                <Link to="/"><button className="login-btn" >Back</button></Link>
 
                             </form>
 

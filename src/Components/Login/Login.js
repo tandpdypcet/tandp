@@ -14,11 +14,14 @@ export default function Login() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post(process.env.REACT_APP_BASE_URL+'/login', {email: values.Email[0], password: values.Password[0]})
+        axios.post(process.env.REACT_APP_BASE_URL + '/login', {
+            email: values.Email[0],
+            password: values.Password[0]
+        })
             .then(res => {
                 console.log("Login Successful!", res);
                 // alert("Done");
-                navigate('/');
+                navigate('/home');
             })
             .catch(err => {
                 console.log("Login failed", err);
@@ -56,6 +59,7 @@ export default function Login() {
                             <button className="login-btn" onClick={handleSubmit}>Login</button>
                             <p>Not a member? <Link to="/register">SignUp</Link></p>
                            
+                            <Link to="/"><button className="login-btn" >Back</button></Link>
                         </form>
                     </div>
                 </div>

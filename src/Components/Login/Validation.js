@@ -7,13 +7,13 @@ function Validation(values) {
     }
     const username_pattern = /^[a-zA-Z0-9]+$/;
     const email_pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    const password_pattern = /^[A-Za-z]\w{7,14}$/;
+    const password_pattern = /^[A-Za-z0-9]\w{7,14}$/;
 
     if (values.Username === "") {
         error.Username = "Username should not be empty";
     }
     else if (!username_pattern.test(values.Username)) {
-        error.Username = "Username didn't match";
+        error.Username = "Username is incorrect";
     }
     else {
         error.Username = ""
@@ -23,7 +23,7 @@ function Validation(values) {
         error.Email = "Email should not be empty";
     }
     else if (!email_pattern.test(values.Email)) {
-        error.Email = "Email didn't match";
+        error.Email = "Email is incorrect";
     }
     else {
         error.Email = ""
@@ -33,19 +33,22 @@ function Validation(values) {
         error.Password = "Password should not be empty";
     }
     else if (!password_pattern.test(values.Password)) {
-        error.Password = "Password didn't match";
+        error.Password = "Password is incorrect";
     }
     else {
         error.Password = ""
     }
-    //console.log(error.Cpassword)
-    //console.log(error.Password);
-    // if (values.Password === values.Cpassword) {
-    //     error.Cpassword = "";
+    // console.log(error.Cpassword)
+    // console.log(error.Password);
+    // if (values.Password != values.Cpassword) {
+    //     error.Cpassword = "Confirm Password not match";
     // }
-    // else {
-    //     error.Cpassword = "Password not match";
+    // else 
+    // if (values.Cpassword === "")
+    // {
+    //     error.Cpassword = "Confirm Password should not be empty";
     // }
+    
     return error;
 }
 export default Validation;

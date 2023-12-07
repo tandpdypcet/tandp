@@ -6,9 +6,12 @@ import img3 from '../Images/awards/award3.jpg'
 import img4 from '../Images/awards/award4.jpg'
 import img5 from '../Images/awards/award5.jpg'
 import img6 from '../Images/awards/award6.jpg'
+import { Navbar_b } from '../Navbar/Navbar_b';
 
 function Award() {
     return (
+        <>
+            <Navbar_b/>
         <Carousel style={{borderRadius: '50px', padding: 50, height:'90vh',width:'auto'}}>
             <Carousel.Item interval={2200}>
                 <img
@@ -61,7 +64,7 @@ function Award() {
                 />
             </Carousel.Item>
         </Carousel>
-
+        </>
     );
 }
 

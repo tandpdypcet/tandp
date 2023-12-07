@@ -25,7 +25,7 @@ function ReadStudent() {
                     <p>Username: <b>{student.username}</b></p>
                     <p>Email:<b> {student.email}</b></p>
                     <p>Password:<b> {student.password}</b></p>
-                    <Link to='/StudentDetails' className='btn btn-sm btn-outline-secondary readStudentByIdBtn'>Back</Link>
+                    <Link to='/AdminPage' className='btn btn-sm btn-outline-secondary readStudentByIdBtn'>Back</Link>
                 </>
             // ) : (
             //     <p>No student data available</p>
