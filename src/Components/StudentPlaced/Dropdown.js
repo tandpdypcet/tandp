@@ -5,6 +5,7 @@ import { Navbar_b } from '../Navbar/Navbar_b';
 function DropDown() {
     return (
         <>
+            <div className='bgDrp'>
             <Navbar_b/>
         <div className="container">
             
@@ -53,7 +54,8 @@ function DropDown() {
 
                 </Dropdown.Menu>
             </Dropdown>
-        </div>
+                </div>
+                </div>
         </>
             );
 }

@@ -8,6 +8,17 @@
     width: 300px;
     height: 50px;
 }
+.bgDrp{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+
+    background-image: url(https://hfsfcu.org/wp-content/uploads/2018/05/Celebrate-Graduation.jpeg);
+}
+
 
 .back-btn-studplaced{
     margin-left: 520px;
