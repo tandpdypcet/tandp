@@ -64,7 +64,7 @@ function StudentDetails() {
     const handleDelete = async (id) => {
         await axios.post(process.env.REACT_APP_BASE_URL + '/delete', { id })
             .then(res => {
-                window.location();
+                alert("Succesfully deleted record!!")
             })
             .catch(err => {
                 console.log(err);
