@@ -9,7 +9,7 @@ import te from '../Images/Recruiters/te.png';
 import skl from '../Images/Recruiters/SLK.png';
 import ms from '../Images/Recruiters/Microsoft.jpg';
 import bc from '../Images/Recruiters/barclays.png';
-import hex from '../Images/Recruiters/Hexaware.png';
+
 const Recruiters = () => {
     return (
         <>
@@ -56,7 +56,7 @@ const Recruiters = () => {
                 </div>
 
                 
-                
+            
                 
                 
             </div>
