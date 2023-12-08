@@ -12,7 +12,7 @@ export const Navbar_b = () => {
        
         <Navbar expand="lg" className="bg-body-tertiary sticky-top">
             <Container fluid>
-                <Navbar.Brand as={Link} to={"/"}><img src={logo} style={{
+                <Navbar.Brand as={Link} to={"/home"}><img src={logo} style={{
                     height: '50px',
                     borderRadius: '5px'
                 }} />
